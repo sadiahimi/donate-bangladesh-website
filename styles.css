@@ -171,3 +171,6 @@ background: rgb(180, 244, 97);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         z-index: 2000;
     }
+    #historySection {
+        margin-top: 20px;
+    }
