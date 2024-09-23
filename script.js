@@ -31,7 +31,33 @@ document.querySelectorAll('.donate-button').forEach(button => {
 document.getElementById('closeModal').onclick = function() {
     document.getElementById('modal').classList.add('hidden');
 };
-
 document.getElementById('blogButton').onclick = function() {
     window.location.href = 'blog.html';
 };
+function validateDonation(amount) {
+    if (isNaN(amount) || amount <= 0 || amount > accountBalance) {
+        alert('Invalid donation amount.');
+        return false;
+    }
+    return true;
+}
+function addToHistory(title, amount) {
+    const historyList = document.getElementById('historyList');
+    const newEntry = document.createElement('li');
+    newEntry.innerText = `Donated ${amount} to ${title} on ${new Date().toLocaleString()}`;
+    historyList.appendChild(newEntry);
+}
+function showModal() {
+    document.getElementById('modal').classList.remove('hidden');
+}
+function toggleActiveButton(activeId) {
+    const buttons = ['donationButton', 'historyButton'];
+    buttons.forEach(buttonId => {
+        const button = document.getElementById(buttonId);
+        if (buttonId === activeId) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });   
+}

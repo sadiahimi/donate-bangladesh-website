@@ -177,7 +177,6 @@ background: rgb(180, 244, 97);
     .faq {
         margin: 20px;
     }
-    
     .faq-item {
         margin-bottom: 10px;
         border: 1px solid #ccc;
@@ -202,4 +201,25 @@ background: rgb(180, 244, 97);
     }
     .faq-item input[type="checkbox"]:checked + label + .faq-answer {
         display: block; 
+    }
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+        }
+        .donation-card {
+            flex-direction: column;
+            align-items: center;
+        }
+        .donation-card img {
+            width: 100%;
+            height: auto;
+            margin: 0 0 10px 0;
+        }
+        .button-container {
+            flex-direction: column;
+        }
+        .button-container button {
+            width: 100%;
+            margin: 5px 0;
+        }
     }
