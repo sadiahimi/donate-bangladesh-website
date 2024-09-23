@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 .navbar {
     display: flex;
@@ -45,23 +49,23 @@ background: rgb(180, 244, 97);
     flex: none;
     flex-grow: 1;
     margin: 0px 10px;
-    }
-    .balance-container {
+}
+.balance-container {
         display: flex;
         align-items: center;
         color: white;
-    }
-    .sticky-container {
+}
+.sticky-container {
         position: sticky;
         top: 70px; 
         background-color: white;
         z-index: 998;
         padding: 10px 0;
-    }
-    .button-container {
+}
+.button-container {
         text-align: center;
-    }
-    .button-container button {
+}
+.button-container button {
         margin: 0 10px;
         padding: 10px 20px;
         border: none;
@@ -71,16 +75,16 @@ background: rgb(180, 244, 97);
         color:#4CAF50;
         ;
         transition: background-color 0.3s, color 0.3s;
-    }
-    .button-container button:hover {
+}
+.button-container button:hover {
         background-color: rgb(180, 244, 97);
         color: black;
-    }
-    .button-container button.active {
+}
+.button-container button.active {
         background-color: rgb(180, 244, 97);
         color: black;
-    }
-    .donation-card {
+}
+.donation-card {
         display: flex;
         margin: 20px;
         border: 1px solid #ccc;
@@ -92,18 +96,18 @@ background: rgb(180, 244, 97);
         background: rgb(255, 255, 255);
         width: 540;
         height: 403; 
-    }
-    .w3-round {
+}
+.w3-round {
         
         margin-right: 20px; 
         position: static;
         width: 300px;
         height: 289px;
-    }
-    .card-info {
+}
+.card-info {
         flex: 1;
-    }
-    .donate-button {
+}
+.donate-button {
     position: static;
     width: 222px;
     height: 57px;
@@ -120,8 +124,8 @@ background: rgb(180, 244, 97);
     margin: 16px 0px;
     border-radius: 8px;
     background: rgb(180, 244, 97);
-    }
-    input{
+}
+input{
     position: static;
     width: 522px;
     height: 56px;
@@ -140,10 +144,10 @@ background: rgb(180, 244, 97);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 8px;
     background: rgb(255, 255, 255);
-    }
-    .coin{
+}
+.coin{
     position: static;
-    width: 110px;
+    width: 150px;
     height: 44px;
     display: flex;
     flex-direction: row;
@@ -157,11 +161,11 @@ background: rgb(180, 244, 97);
     margin: 16px 0px;
     border-radius: 8px;
     background: rgba(17, 17, 17, 0.05);
-    }
-    .hidden {
+}
+.hidden {
         display: none;
-    }
-    .modal {
+}
+.modal {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -170,56 +174,76 @@ background: rgb(180, 244, 97);
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         z-index: 2000;
-    }
-    #historySection {
+}
+#historySection {
         margin-top: 20px;
-    }
-    .faq {
+}
+.faq {
         margin: 20px;
-    }
-    .faq-item {
+}
+.faq-item {
         margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         padding: 10px;
-    }
-    .faq-question {
+}
+.faq-question {
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .dropdown-arrow {
+}
+.dropdown-arrow {
         transition: transform 0.3s;
-    }
-    .faq-answer {
+}
+.faq-answer {
         display: none; 
         padding-top: 10px;
-    }
-    .faq-item input[type="checkbox"] {
+}
+.faq-item input[type="checkbox"] {
         display: none;
-    }
-    .faq-item input[type="checkbox"]:checked + label + .faq-answer {
+}
+.faq-item input[type="checkbox"]:checked + label + .faq-answer {
         display: block; 
-    }
-    @media (max-width: 768px) {
-        .navbar {
+}
+@media (max-width: 768px) {
+    .navbar {
             flex-direction: column;
         }
-        .donation-card {
+    .donation-card {
             flex-direction: column;
             align-items: center;
+            margin: 10px 0;
         }
-        .donation-card img {
+    .donation-card img {
             width: 100%;
             height: auto;
             margin: 0 0 10px 0;
         }
-        .button-container {
+    .button-container {
             flex-direction: column;
         }
-        .button-container button {
+    .balance-container {
+            flex-direction: column;
+        }
+    #blogButton {
+            width: 100%; 
+            margin: 5px 0;
+        }
+    .donatee {
+            margin: 10px;
+            width: 100%;
+        }
+    .button-container button {
             width: 100%;
             margin: 5px 0;
         }
+    .donate-button{
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+        }
+        
     }
+
+   
