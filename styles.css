@@ -174,3 +174,32 @@ background: rgb(180, 244, 97);
     #historySection {
         margin-top: 20px;
     }
+    .faq {
+        margin: 20px;
+    }
+    
+    .faq-item {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .faq-question {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dropdown-arrow {
+        transition: transform 0.3s;
+    }
+    .faq-answer {
+        display: none; 
+        padding-top: 10px;
+    }
+    .faq-item input[type="checkbox"] {
+        display: none;
+    }
+    .faq-item input[type="checkbox"]:checked + label + .faq-answer {
+        display: block; 
+    }

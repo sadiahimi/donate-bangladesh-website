@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Donate Bangladesh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FAQ</h1>
+    
+    <div class="faq">
+        <div class="faq-item">
+            <input type="checkbox" id="q1">
+            <label for="q1" class="faq-question">
+                What is the Document Object Model (DOM)?
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q2">
+            <label for="q2" class="faq-question">
+                How do you select an element from the DOM?
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>You can use methods like <code>document.getElementById</code> or <code>document.querySelector</code> to select elements from the DOM.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q3">
+            <label for="q3" class="faq-question">
+                What is event delegation in the context of the DOM, and why is it useful?
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q4">
+            <label for="q4" class="faq-question">
+                How do you manipulate an element's attributes and styles using the DOM?
+                <span class="dropdown-arrow">▼</span>
+            </label>
+            <div class="faq-answer">
+                <p>You can manipulate attributes using methods like <code>element.setAttribute</code> and styles using the <code>element.style</code> property.</p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
